@@ -1,0 +1,11 @@
+{
+    "Add Factory": {
+        "prefix": "!factory",
+        "description": "Adds the Joomla Factory declaration.",
+        "body": [
+          "use Joomla\\CMS\\Factory;",
+          "",
+          "Factory::$1;"
+        ]
+    }
+}

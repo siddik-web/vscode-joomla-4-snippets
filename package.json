@@ -1,0 +1,23 @@
+{
+    "name": "vscode-joomla-4-snippets",
+    "displayName": "Visual Studio Code Joomla 4 Snippets",
+    "description": "Snippets for Joomla 4.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "php",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    },
+    "scripts": {
+        "install": "vsce package; code --install-extension *.vsix"
+    }
+}
