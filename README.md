@@ -11,8 +11,8 @@ Visual Studio Code Joomla 4 snippets.
 
 1. Launch VS Code
 1. Quick Open (⌘+P)
-1. Enter the following command and press enter: 'ext install vs-code-joomla-snippets'
-1. Choose extension (Author: AnibalSanchez)
+1. Enter the following command and press enter: 'ext install vscode-joomla-4-snippets'
+1. Choose extension (Author: Md Siddiqur Rahman)
 1. Reload VS Code
 ## Release Notes
 
@@ -29,7 +29,7 @@ Please send any feedback or suggestions to [@imsiddiqur](https://twitter.com/ims
 
 ## Open Source
 
-This is an open source project and if you want to contribute I've added issues on github that are easy to start with. [![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://github.com/anibalsanchez/vs-code-joomla-snippets/labels/first-timers-only)
+This is an open source project and if you want to contribute I've added issues on github that are easy to start with.
 
 ## Disclaimer
 
