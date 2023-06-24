@@ -1,11 +1,118 @@
 {
-    "Add Factory": {
-        "prefix": "!factory",
-        "description": "Adds the Joomla Factory declaration.",
-        "body": [
-          "use Joomla\\CMS\\Factory;",
-          "",
-          "Factory::$1;"
-        ]
-    }
+  "Joomla Blank Form Field": {
+		"prefix": "sp-form",
+		"body": [
+		  "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+		  "<form>",
+		  "\t<fields name=\"${1:fieldsName}\" label=\"${2:fieldsLabel}\">",
+		  "\t\t<field type=\"${3:fieldType}\" name=\"${4:fieldName}\" label=\"${5:fieldLabel}\"></field>",
+		  "\t</fields>",
+		  "</form>"
+		],
+		"description": "Joomla Blank Form Field"
+	  },
+	  "Joomla Blank Config Field": {
+		"prefix": "sp-config",
+		"body": [
+		  "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+		  "<config>",
+		  "\t<inlinehelp button=\"show\"/>",
+		  "\t<fieldset name=\"${1:example}\" label=\"${1:example}\" description=\"${1:example}\">",
+		  "\t\t<field type=\"${1:example}\" name=\"${1:example}\" label=\"${1:example}\"></field>",
+		  "\t</fieldset>",
+		  "</config>"
+		],
+		"description": "Joomla Blank Config Field"
+	  },
+	  "Joomla Blank Config Without Field": {
+		"prefix": "sp-wconfig",
+		"body": [
+		  "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+		  "<config>",
+		  "<inlinehelp button=\"show\"/>",
+		  "\t<fieldset name=\"${1:example}\" label=\"${2:example}\" description=\"${3:example}\">",
+		  "\t\t${4:example}",
+		  "\t</fieldset>",
+		  "</config>"
+		],
+		"description": "Joomla Blank Config Without Field"
+	  },
+	  "Joomla Blank Form Fieldset": {
+		"prefix": "sp-fieldset",
+		"body": [
+		  "\t<fieldset name=\"${1:example}\" label=\"${1:example}\" description=\"${1:example}\">",
+		  "\t${1:example}",
+		  "\t</fieldset>"
+		],
+		"description": "Joomla Blank Form Fieldset"
+	  },
+	  "Joomla Blank Form fields": {
+		"prefix": "sp-fields",
+		"body": [
+		  "<fields name=\"${1:example}\" label=\"${1:example}\">",
+		  "\t${1:example}",
+		  "</fields>"
+		],
+		"description": "Joomla Blank Form fields"
+	  },
+	  "Joomla Blank Form Text field": {
+		"prefix": "sp-textfield",
+		"body": [
+		  "<field",
+		   "\ttype=\"text\"",
+		   "\tname=\"${1:example}\"",
+		   "\tlabel=\"${1:example}\"",
+		   "/>"
+		],
+		"description": "Joomla Blank Form Text field"
+	  },
+	  "Joomla Blank Form Number field": {
+		"prefix": "sp-numberfield",
+		"body": [
+			"<field",
+			"\ttype=\"number\"",
+			"\tname=\"${1:example}\" ",
+			"\tlabel=\"${1:example}\"",
+			"/>"
+		  ],
+		"description": "Joomla Blank Form Number field"
+	  },
+	  "Joomla Blank Form Radio Field": {
+		"prefix": "sp-radiofield",
+		"body": [
+		  "<field",
+		  "name=\"${1:example}\"",
+		  "type=\"radio\"",
+		  "layout=\"joomla.form.field.radio.switcher\"",
+		  "label=\"${1:example}\" default=\"1\"",
+		  ">",
+		  "\t<option value=\"0\">JHIDE</option>",
+		  "\t<option value=\"1\">JSHOW</option>",
+		  "</field>"
+		],
+		"description": "Joomla Blank Form Radio Field"
+	  },
+	  "Joomla Blank Form Custom Field": {
+		"prefix": "sp-customfield",
+		"body": [
+		  "<field",
+		  "\tname=\"${1:name}\"",
+		  "\ttype=\"${1:type}\"",
+		  "\tlabel=\"${1:label}\"",
+		  "\taddfieldprefix=\"${1:namespacePath}\"/>"
+		],
+		"description": "Joomla Blank Form Custom Field"
+	  },
+	  "Joomla Blank Form Media Field": {
+		"prefix": "sp-mediafield",
+		"body": [
+		  "<field",
+		  "\ttype=\"media\"",
+		  "\tname=\"${1:example}\" ",
+		  "\tlabel=\"${1:example}\"",
+		  "/>",
+		  ""
+		],
+		"description": "Joomla Blank Form Media Field"
+	  }
 }
