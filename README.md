@@ -1,58 +1,44 @@
 # vscode-joomla-4-snippets README
 
-This is the README for your extension "vscode-joomla-4-snippets". After writing up a brief description, we recommend including the following sections.
+Visual Studio Code Joomla 4 snippets.
 
 ## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
 
 <img width="589" alt="Screenshot 2023-06-24 at 3 41 16 PM" src="https://github.com/siddik-web/vscode-joomla-4-snippets/assets/53170094/d6def78b-b187-4a2c-b62b-359569956e9d">
 
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Installation (Mac)
 
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
+1. Launch VS Code
+1. Quick Open (⌘+P)
+1. Enter the following command and press enter: 'ext install vs-code-joomla-snippets'
+1. Choose extension (Author: AnibalSanchez)
+1. Reload VS Code
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+New Joomla 4 Form Code Snippets.
 
 ### 1.0.0
 
 Initial release of Joomla 4 Code Snippets.
 
 -----------------------------------------------------------------------------------------------------------
+## Feedback
 
-## Working with Markdown
+Please send any feedback or suggestions to [@imsiddiqur](https://twitter.com/imsiddiqur) (Twitter) or [create an issue](https://github.com/siddik-web/vscode-joomla-4-snippets) on GitHub.
 
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+## Open Source
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+This is an open source project and if you want to contribute I've added issues on github that are easy to start with. [![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://github.com/anibalsanchez/vs-code-joomla-snippets/labels/first-timers-only)
 
-### For more information
+## Disclaimer
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+Important: This extension due to the nature of it's purpose will create
+files on your hard drive and if necessary create the respective folder structure.
+While it should not override any files during this process, I'm not giving any guarantees or take any responsibility in case of lost data.
+
+## License
+
+MIT
 
 **Enjoy!**
