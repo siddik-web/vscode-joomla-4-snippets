@@ -114,5 +114,68 @@
 		  ""
 		],
 		"description": "Joomla Blank Form Media Field"
+	  },
+	  "Joomla Blank Form Checkbox Field": {
+		"prefix": "sp-checkboxfield",
+		"body": [
+		  "<field",
+		  "\ttype=\"checkbox\"",
+		  "\tname=\"${1:example}\" ",
+		  "\tlabel=\"${1:example}\"",
+		  "\tdescription=\"${1:example}\"",
+		  "\tvalue=\"${1:example}\"",
+		  "\tchecked=\"${1:example}\"",
+		  "/>",
+		  ""
+		],
+		"description": "Joomla Blank Form Checkbox Field"
+	  },
+	  "Joomla Blank Form Color Field": {
+		"prefix": "sp-colorfield",
+		"body": [
+		  "<field",
+		  "\ttype=\"color\"",
+		  "\tname=\"${1:example}\" ",
+		  "\tlabel=\"${1:example}\"",
+		  "/>",
+		  ""
+		],
+		"description": "Joomla Blank Form Color Field"
+	  },
+	  "Joomla Blank Form Editor Field": {
+		"prefix": "sp-editorfield",
+		"body": [
+		  "<field",
+		  "\ttype=\"editor\"",
+		  "\tname=\"${1:example}\" ",
+		  "\tlabel=\"${1:example}\"",
+		  "/>",
+		  ""
+		],
+		"description": "Joomla Blank Form Editor Field"
+	  },
+	  "Joomla Blank Form File Field": {
+		"prefix": "sp-filefield",
+		"body": [
+		  "<field",
+		  "\ttype=\"file\"",
+		  "\tname=\"${1:example}\" ",
+		  "\tlabel=\"${1:example}\"",
+		  "/>",
+		  ""
+		],
+		"description": "Joomla Blank Form File Field"
+	  },
+	  "Joomla Blank Form Integer Field": {
+		"prefix": "sp-integerfield",
+		"body": [
+		  "<field",
+		  "\ttype=\"integer\"",
+		  "\tname=\"${1:example}\" ",
+		  "\tlabel=\"${1:example}\"",
+		  "/>",
+		  ""
+		],
+		"description": "Joomla Blank Form Integer Field"
 	  }
 }
