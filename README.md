@@ -8,7 +8,8 @@ Describe specific features of your extension including screenshots of your exten
 
 For example if there is an image subfolder under your extension project workspace:
 
-\!\[feature X\]\(images/feature-x.png\)
+<img width="589" alt="Screenshot 2023-06-24 at 3 41 16 PM" src="https://github.com/siddik-web/vscode-joomla-4-snippets/assets/53170094/d6def78b-b187-4a2c-b62b-359569956e9d">
+
 
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
