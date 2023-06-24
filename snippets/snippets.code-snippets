@@ -46,14 +46,14 @@
 		],
 		"description": "Joomla Blank Form Fieldset"
 	  },
-	  "Joomla Blank Form fields": {
+	  "Joomla Blank Form Fields": {
 		"prefix": "sp-fields",
 		"body": [
 		  "<fields name=\"${1:example}\" label=\"${1:example}\">",
 		  "\t${1:example}",
 		  "</fields>"
 		],
-		"description": "Joomla Blank Form fields"
+		"description": "Joomla Blank Form Fields"
 	  },
 	  "Joomla Blank Form Text field": {
 		"prefix": "sp-textfield",
@@ -64,7 +64,7 @@
 		   "\tlabel=\"${1:example}\"",
 		   "/>"
 		],
-		"description": "Joomla Blank Form Text field"
+		"description": "Joomla Blank Form Text Field"
 	  },
 	  "Joomla Blank Form Number field": {
 		"prefix": "sp-numberfield",
@@ -75,7 +75,7 @@
 			"\tlabel=\"${1:example}\"",
 			"/>"
 		  ],
-		"description": "Joomla Blank Form Number field"
+		"description": "Joomla Blank Form Number Field"
 	  },
 	  "Joomla Blank Form Radio Field": {
 		"prefix": "sp-radiofield",
