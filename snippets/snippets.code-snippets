@@ -17,8 +17,8 @@
 		  "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
 		  "<config>",
 		  "\t<inlinehelp button=\"show\"/>",
-		  "\t<fieldset name=\"${1:example}\" label=\"${1:example}\" description=\"${1:example}\">",
-		  "\t\t<field type=\"${1:example}\" name=\"${1:example}\" label=\"${1:example}\"></field>",
+		  "\t<fieldset name=\"${1:example}\" label=\"${2:example}\" description=\"${3:example}\">",
+		  "\t\t<field type=\"${4:example}\" name=\"${5:example}\" label=\"${6:example}\"></field>",
 		  "\t</fieldset>",
 		  "</config>"
 		],
@@ -40,8 +40,8 @@
 	  "Joomla Blank Form Fieldset": {
 		"prefix": "sp-fieldset",
 		"body": [
-		  "\t<fieldset name=\"${1:example}\" label=\"${1:example}\" description=\"${1:example}\">",
-		  "\t${1:example}",
+		  "\t<fieldset name=\"${1:example}\" label=\"${2:example}\" description=\"${3:example}\">",
+		  "\t${4:example}",
 		  "\t</fieldset>"
 		],
 		"description": "Joomla Blank Form Fieldset"
@@ -49,8 +49,8 @@
 	  "Joomla Blank Form Fields": {
 		"prefix": "sp-fields",
 		"body": [
-		  "<fields name=\"${1:example}\" label=\"${1:example}\">",
-		  "\t${1:example}",
+		  "<fields name=\"${1:example}\" label=\"${2:example}\">",
+		  "\t${3:example}",
 		  "</fields>"
 		],
 		"description": "Joomla Blank Form Fields"
@@ -61,7 +61,7 @@
 		  "<field",
 		   "\ttype=\"text\"",
 		   "\tname=\"${1:example}\"",
-		   "\tlabel=\"${1:example}\"",
+		   "\tlabel=\"${2:example}\"",
 		   "/>"
 		],
 		"description": "Joomla Blank Form Text Field"
@@ -72,7 +72,7 @@
 			"<field",
 			"\ttype=\"number\"",
 			"\tname=\"${1:example}\" ",
-			"\tlabel=\"${1:example}\"",
+			"\tlabel=\"${2:example}\"",
 			"/>"
 		  ],
 		"description": "Joomla Blank Form Number Field"
@@ -84,7 +84,7 @@
 		  "name=\"${1:example}\"",
 		  "type=\"radio\"",
 		  "layout=\"joomla.form.field.radio.switcher\"",
-		  "label=\"${1:example}\" default=\"1\"",
+		  "label=\"${2:example}\" default=\"1\"",
 		  ">",
 		  "\t<option value=\"0\">JHIDE</option>",
 		  "\t<option value=\"1\">JSHOW</option>",
@@ -97,9 +97,9 @@
 		"body": [
 		  "<field",
 		  "\tname=\"${1:name}\"",
-		  "\ttype=\"${1:type}\"",
-		  "\tlabel=\"${1:label}\"",
-		  "\taddfieldprefix=\"${1:namespacePath}\"/>"
+		  "\ttype=\"${2:type}\"",
+		  "\tlabel=\"${3:label}\"",
+		  "\taddfieldprefix=\"${4:namespacePath}\"/>"
 		],
 		"description": "Joomla Blank Form Custom Field"
 	  },
@@ -121,10 +121,10 @@
 		  "<field",
 		  "\ttype=\"checkbox\"",
 		  "\tname=\"${1:example}\" ",
-		  "\tlabel=\"${1:example}\"",
-		  "\tdescription=\"${1:example}\"",
-		  "\tvalue=\"${1:example}\"",
-		  "\tchecked=\"${1:example}\"",
+		  "\tlabel=\"${2:example}\"",
+		  "\tdescription=\"${3:example}\"",
+		  "\tvalue=\"${4:example}\"",
+		  "\tchecked=\"${5:example}\"",
 		  "/>",
 		  ""
 		],
@@ -136,7 +136,7 @@
 		  "<field",
 		  "\ttype=\"color\"",
 		  "\tname=\"${1:example}\" ",
-		  "\tlabel=\"${1:example}\"",
+		  "\tlabel=\"${2:example}\"",
 		  "/>",
 		  ""
 		],
@@ -148,7 +148,7 @@
 		  "<field",
 		  "\ttype=\"editor\"",
 		  "\tname=\"${1:example}\" ",
-		  "\tlabel=\"${1:example}\"",
+		  "\tlabel=\"${2:example}\"",
 		  "/>",
 		  ""
 		],
@@ -160,7 +160,7 @@
 		  "<field",
 		  "\ttype=\"file\"",
 		  "\tname=\"${1:example}\" ",
-		  "\tlabel=\"${1:example}\"",
+		  "\tlabel=\"${2:example}\"",
 		  "/>",
 		  ""
 		],
@@ -172,10 +172,41 @@
 		  "<field",
 		  "\ttype=\"integer\"",
 		  "\tname=\"${1:example}\" ",
-		  "\tlabel=\"${1:example}\"",
+		  "\tlabel=\"${2:example}\"",
 		  "/>",
 		  ""
 		],
 		"description": "Joomla Blank Form Integer Field"
-	  }
+	  },
+	  "Joomla Blank Subform Field With Form Source": {
+		"prefix": "sp-subform-formsource",
+		"body": [
+			"<field",
+			"\tname=\"${1:example}\"",
+			"\ttype=\"subform\"",
+			"\tformsource=\"${2:example}\"",
+			"\tlabel=\"${3:example}\" ",
+			"\tdescription=\"${4:example}\"",
+			"/>"
+		],
+		"description": "Joomla Blank Subform Field With Form Source"
+		},
+		"Joomla Blank Subform Field": {
+			"prefix": "sp-subform",
+			"body": [
+			  "<field",
+			  "name=\"${1:name}\"",
+			  "type=\"subform\"",
+			  "label=\"${2:label}\"",
+			  "description=\"${3:description}\"",
+			  "multiple=\"true\"",
+			  ">",
+			  "<form>",
+			  "${4:addFields}",
+			  "</form>",
+			  "</field>"
+			],
+			"description": "Joomla Blank Subform Field"
+		  }
+
 }
