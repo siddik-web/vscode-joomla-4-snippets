@@ -1,72 +1,72 @@
 {
-  "Joomla Blank Form Field": {
+	"Joomla Blank Form Field": {
 		"prefix": "sp-form",
 		"body": [
-		  "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
-		  "<form>",
-		  "\t<fields name=\"${1:fieldsName}\" label=\"${2:fieldsLabel}\">",
-		  "\t\t<field type=\"${3:fieldType}\" name=\"${4:fieldName}\" label=\"${5:fieldLabel}\"></field>",
-		  "\t</fields>",
-		  "</form>"
+			"<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+			"<form>",
+			"\t<fields name=\"${1:fieldsName}\" label=\"${2:fieldsLabel}\">",
+			"\t\t<field type=\"${3:fieldType}\" name=\"${4:fieldName}\" label=\"${5:fieldLabel}\"></field>",
+			"\t</fields>",
+			"</form>"
 		],
 		"description": "Joomla Blank Form Field"
-	  },
-	  "Joomla Blank Config Field": {
+	},
+	"Joomla Blank Config Field": {
 		"prefix": "sp-config",
 		"body": [
-		  "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
-		  "<config>",
-		  "\t<inlinehelp button=\"show\"/>",
-		  "\t<fieldset name=\"${1:example}\" label=\"${2:example}\" description=\"${3:example}\">",
-		  "\t\t<field type=\"${4:example}\" name=\"${5:example}\" label=\"${6:example}\"></field>",
-		  "\t</fieldset>",
-		  "</config>"
+			"<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+			"<config>",
+			"\t<inlinehelp button=\"show\"/>",
+			"\t<fieldset name=\"${1:example}\" label=\"${2:example}\" description=\"${3:example}\">",
+			"\t\t<field type=\"${4:example}\" name=\"${5:example}\" label=\"${6:example}\"></field>",
+			"\t</fieldset>",
+			"</config>"
 		],
 		"description": "Joomla Blank Config Field"
-	  },
-	  "Joomla Blank Config Without Field": {
+	},
+	"Joomla Blank Config Without Field": {
 		"prefix": "sp-wconfig",
 		"body": [
-		  "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
-		  "<config>",
-		  "<inlinehelp button=\"show\"/>",
-		  "\t<fieldset name=\"${1:example}\" label=\"${2:example}\" description=\"${3:example}\">",
-		  "\t\t${4:example}",
-		  "\t</fieldset>",
-		  "</config>"
+			"<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+			"<config>",
+			"<inlinehelp button=\"show\"/>",
+			"\t<fieldset name=\"${1:example}\" label=\"${2:example}\" description=\"${3:example}\">",
+			"\t\t${4:example}",
+			"\t</fieldset>",
+			"</config>"
 		],
 		"description": "Joomla Blank Config Without Field"
-	  },
-	  "Joomla Blank Form Fieldset": {
+	},
+	"Joomla Blank Form Fieldset": {
 		"prefix": "sp-fieldset",
 		"body": [
-		  "\t<fieldset name=\"${1:example}\" label=\"${2:example}\" description=\"${3:example}\">",
-		  "\t${4:example}",
-		  "\t</fieldset>"
+			"\t<fieldset name=\"${1:example}\" label=\"${2:example}\" description=\"${3:example}\">",
+			"\t${4:example}",
+			"\t</fieldset>"
 		],
 		"description": "Joomla Blank Form Fieldset"
-	  },
-	  "Joomla Blank Form Fields": {
+	},
+	"Joomla Blank Form Fields": {
 		"prefix": "sp-fields",
 		"body": [
-		  "<fields name=\"${1:example}\" label=\"${2:example}\">",
-		  "\t${3:example}",
-		  "</fields>"
+			"<fields name=\"${1:example}\" label=\"${2:example}\">",
+			"\t${3:example}",
+			"</fields>"
 		],
 		"description": "Joomla Blank Form Fields"
-	  },
-	  "Joomla Blank Form Text field": {
+	},
+	"Joomla Blank Form Text field": {
 		"prefix": "sp-textfield",
 		"body": [
-		  "<field",
-		   "\ttype=\"text\"",
-		   "\tname=\"${1:example}\"",
-		   "\tlabel=\"${2:example}\"",
-		   "/>"
+			"<field",
+			"\ttype=\"text\"",
+			"\tname=\"${1:example}\"",
+			"\tlabel=\"${2:example}\"",
+			"/>"
 		],
 		"description": "Joomla Blank Form Text Field"
-	  },
-	  "Joomla Blank Form Number field": {
+	},
+	"Joomla Blank Form Number field": {
 		"prefix": "sp-numberfield",
 		"body": [
 			"<field",
@@ -74,111 +74,111 @@
 			"\tname=\"${1:example}\" ",
 			"\tlabel=\"${2:example}\"",
 			"/>"
-		  ],
+		],
 		"description": "Joomla Blank Form Number Field"
-	  },
-	  "Joomla Blank Form Radio Field": {
+	},
+	"Joomla Blank Form Radio Field": {
 		"prefix": "sp-radiofield",
 		"body": [
-		  "<field",
-		  "name=\"${1:example}\"",
-		  "type=\"radio\"",
-		  "layout=\"joomla.form.field.radio.switcher\"",
-		  "label=\"${2:example}\" default=\"1\"",
-		  ">",
-		  "\t<option value=\"0\">JHIDE</option>",
-		  "\t<option value=\"1\">JSHOW</option>",
-		  "</field>"
+			"<field",
+			"name=\"${1:example}\"",
+			"type=\"radio\"",
+			"layout=\"joomla.form.field.radio.switcher\"",
+			"label=\"${2:example}\" default=\"1\"",
+			">",
+			"\t<option value=\"0\">JHIDE</option>",
+			"\t<option value=\"1\">JSHOW</option>",
+			"</field>"
 		],
 		"description": "Joomla Blank Form Radio Field"
-	  },
-	  "Joomla Blank Form Custom Field": {
+	},
+	"Joomla Blank Form Custom Field": {
 		"prefix": "sp-customfield",
 		"body": [
-		  "<field",
-		  "\tname=\"${1:name}\"",
-		  "\ttype=\"${2:type}\"",
-		  "\tlabel=\"${3:label}\"",
-		  "\taddfieldprefix=\"${4:namespacePath}\"/>"
+			"<field",
+			"\tname=\"${1:name}\"",
+			"\ttype=\"${2:type}\"",
+			"\tlabel=\"${3:label}\"",
+			"\taddfieldprefix=\"${4:namespacePath}\"/>"
 		],
 		"description": "Joomla Blank Form Custom Field"
-	  },
-	  "Joomla Blank Form Media Field": {
+	},
+	"Joomla Blank Form Media Field": {
 		"prefix": "sp-mediafield",
 		"body": [
-		  "<field",
-		  "\ttype=\"media\"",
-		  "\tname=\"${1:example}\" ",
-		  "\tlabel=\"${1:example}\"",
-		  "/>",
-		  ""
+			"<field",
+			"\ttype=\"media\"",
+			"\tname=\"${1:example}\" ",
+			"\tlabel=\"${1:example}\"",
+			"/>",
+			""
 		],
 		"description": "Joomla Blank Form Media Field"
-	  },
-	  "Joomla Blank Form Checkbox Field": {
+	},
+	"Joomla Blank Form Checkbox Field": {
 		"prefix": "sp-checkboxfield",
 		"body": [
-		  "<field",
-		  "\ttype=\"checkbox\"",
-		  "\tname=\"${1:example}\" ",
-		  "\tlabel=\"${2:example}\"",
-		  "\tdescription=\"${3:example}\"",
-		  "\tvalue=\"${4:example}\"",
-		  "\tchecked=\"${5:example}\"",
-		  "/>",
-		  ""
+			"<field",
+			"\ttype=\"checkbox\"",
+			"\tname=\"${1:example}\" ",
+			"\tlabel=\"${2:example}\"",
+			"\tdescription=\"${3:example}\"",
+			"\tvalue=\"${4:example}\"",
+			"\tchecked=\"${5:example}\"",
+			"/>",
+			""
 		],
 		"description": "Joomla Blank Form Checkbox Field"
-	  },
-	  "Joomla Blank Form Color Field": {
+	},
+	"Joomla Blank Form Color Field": {
 		"prefix": "sp-colorfield",
 		"body": [
-		  "<field",
-		  "\ttype=\"color\"",
-		  "\tname=\"${1:example}\" ",
-		  "\tlabel=\"${2:example}\"",
-		  "/>",
-		  ""
+			"<field",
+			"\ttype=\"color\"",
+			"\tname=\"${1:example}\" ",
+			"\tlabel=\"${2:example}\"",
+			"/>",
+			""
 		],
 		"description": "Joomla Blank Form Color Field"
-	  },
-	  "Joomla Blank Form Editor Field": {
+	},
+	"Joomla Blank Form Editor Field": {
 		"prefix": "sp-editorfield",
 		"body": [
-		  "<field",
-		  "\ttype=\"editor\"",
-		  "\tname=\"${1:example}\" ",
-		  "\tlabel=\"${2:example}\"",
-		  "/>",
-		  ""
+			"<field",
+			"\ttype=\"editor\"",
+			"\tname=\"${1:example}\" ",
+			"\tlabel=\"${2:example}\"",
+			"/>",
+			""
 		],
 		"description": "Joomla Blank Form Editor Field"
-	  },
-	  "Joomla Blank Form File Field": {
+	},
+	"Joomla Blank Form File Field": {
 		"prefix": "sp-filefield",
 		"body": [
-		  "<field",
-		  "\ttype=\"file\"",
-		  "\tname=\"${1:example}\" ",
-		  "\tlabel=\"${2:example}\"",
-		  "/>",
-		  ""
+			"<field",
+			"\ttype=\"file\"",
+			"\tname=\"${1:example}\" ",
+			"\tlabel=\"${2:example}\"",
+			"/>",
+			""
 		],
 		"description": "Joomla Blank Form File Field"
-	  },
-	  "Joomla Blank Form Integer Field": {
+	},
+	"Joomla Blank Form Integer Field": {
 		"prefix": "sp-integerfield",
 		"body": [
-		  "<field",
-		  "\ttype=\"integer\"",
-		  "\tname=\"${1:example}\" ",
-		  "\tlabel=\"${2:example}\"",
-		  "/>",
-		  ""
+			"<field",
+			"\ttype=\"integer\"",
+			"\tname=\"${1:example}\" ",
+			"\tlabel=\"${2:example}\"",
+			"/>",
+			""
 		],
 		"description": "Joomla Blank Form Integer Field"
-	  },
-	  "Joomla Blank Subform Field With Form Source": {
+	},
+	"Joomla Blank Subform Field With Form Source": {
 		"prefix": "sp-subform-formsource",
 		"body": [
 			"<field",
@@ -190,23 +190,22 @@
 			"/>"
 		],
 		"description": "Joomla Blank Subform Field With Form Source"
-		},
-		"Joomla Blank Subform Field": {
-			"prefix": "sp-subform",
-			"body": [
-			  "<field",
-			  "name=\"${1:name}\"",
-			  "type=\"subform\"",
-			  "label=\"${2:label}\"",
-			  "description=\"${3:description}\"",
-			  "multiple=\"true\"",
-			  ">",
-			  "<form>",
-			  "${4:addFields}",
-			  "</form>",
-			  "</field>"
-			],
-			"description": "Joomla Blank Subform Field"
-		  }
-
+	},
+	"Joomla Blank Subform Field": {
+		"prefix": "sp-subform",
+		"body": [
+			"<field",
+			"name=\"${1:name}\"",
+			"type=\"subform\"",
+			"label=\"${2:label}\"",
+			"description=\"${3:description}\"",
+			"multiple=\"true\"",
+			">",
+			"<form>",
+			"${4:addFields}",
+			"</form>",
+			"</field>"
+		],
+		"description": "Joomla Blank Subform Field"
+	}
 }
