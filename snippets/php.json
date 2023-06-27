@@ -2,21 +2,21 @@
 	"Joomla 4 DI Container for Toolbar": {
 		"prefix": "sp-toolbar",
 		"body": [
-			"$toolbar = Factory::getContainer()->get(ToolbarFactoryInterface::class)->createToolbar('toolbar');"
+			"${1:\\$toolbar} = Factory::getContainer()->get(ToolbarFactoryInterface::class)->createToolbar('toolbar');"
 		],
 		"description": "Joomla 4 DI Container for Toolbar Object"
 	},
 	"Joomla 4 DI Container for Database Object": {
 		"prefix": "sp-db",
 		"body": [
-			"$db = Factory::getContainer()->get(DatabaseInterface::class);"
+			"${1:\\$db} = Factory::getContainer()->get(DatabaseInterface::class);"
 		],
 		"description": "Joomla 4 DI Container for DatabaseDriver Object"
 	},
 	"Joomla 4 DI Container for Object": {
 		"prefix": "sp-object",
 		"body": [
-			"$object = Factory::getContainer()->get(${1:FactoryInterface::class});"
+			"${1:\\$object} = Factory::getContainer()->get(${1:FactoryInterface::class});"
 		],
 		"description": "Joomla 4 DI Container for given Object"
 	}
