@@ -24,6 +24,10 @@
             {
                 "language": "xml",
                 "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/snippets-php.code-snippets"
             }
         ]
     },
