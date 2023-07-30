@@ -208,5 +208,17 @@
 			"</field>"
 		],
 		"description": "Joomla Blank Subform Field"
+	},
+	"Joomla Menu Item": {
+		"prefix": "sp-menu",
+		"body": [
+			"<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+			"<metadata>",
+				"\t<layout title=\"${1:Menu Title}\">",
+					"\t\t<message><![CDATA[${2:Menu Description}]]></message>",
+				"\t</layout>",
+			"</metadata>"
+		],
+		"description": "Joomla Blank Menu Item"
 	}
 }
