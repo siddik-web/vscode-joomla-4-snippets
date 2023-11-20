@@ -1,7 +1,7 @@
 {
     "name": "vscode-joomla-4-snippets",
-    "displayName": "Joomla 4 Snippets for Visual Studio Code",
-    "description": "Snippets for Joomla 4.",
+    "displayName": "Joomla 4 and Joomla 5 Snippets for Visual Studio Code",
+    "description": "Snippets for Joomla 4 and Joomla 5.",
     "license": "MIT",
     "repository": {
         "type": "git",
@@ -12,7 +12,7 @@
     },
     "homepage": "https://github.com/siddik-web/vscode-joomla-4-snippets#readme",
     "publisher": "siddiqur",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "engines": {
         "vscode": "^1.63.0"
     },

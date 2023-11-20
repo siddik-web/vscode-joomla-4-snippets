@@ -1,37 +1,44 @@
 {
-	"Joomla 4 DI Container for Toolbar": {
+	"Joomla 4 and Joomla 5 DI Container for Toolbar": {
 		"prefix": "sp-toolbar",
 		"body": [
 			"${1:\\$toolbar} = Factory::getContainer()->get(ToolbarFactoryInterface::class)->createToolbar('toolbar');"
 		],
-		"description": "Joomla 4 DI Container for Toolbar Object"
+		"description": "Joomla 4 and Joomla 5 DI Container for Toolbar Object"
 	},
-	"Joomla 4 DI Container for Database Object": {
+	"Joomla 4 and Joomla 5 DI Container for Database Object": {
 		"prefix": "sp-db",
 		"body": [
 			"${1:\\$db} = Factory::getContainer()->get(DatabaseInterface::class);"
 		],
-		"description": "Joomla 4 DI Container for DatabaseDriver Object"
+		"description": "Joomla 4 and Joomla 5 DI Container for DatabaseDriver Object"
 	},
-	"Joomla 4 DI Container for Object": {
+	"Joomla 4 and Joomla 5 DI Container for Object": {
 		"prefix": "sp-object",
 		"body": [
 			"${1:\\$object} = Factory::getContainer()->get(${1:FactoryInterface::class});"
 		],
-		"description": "Joomla 4 DI Container for given Object"
+		"description": "Joomla 4 and Joomla 5 DI Container for given Object"
 	},
-	"Joomla 4 DI Container for Load User by Id": {
+	"Joomla 4 and Joomla 5 DI Container for Load User by Id": {
 		"prefix": "sp-load-user-by-id",
 		"body": [
 			"${1:\\$loadUserById} = Factory::getContainer()->get(UserFactoryInterface::class)->loadUserById(${1});"
 		],
-		"description": "Joomla 4 DI Container for load User by Id"
+		"description": "Joomla 4 and Joomla 5 DI Container for load User by Id"
 	},
-	"Joomla 4 DI Container for Load User by username": {
+	"Joomla 4 and Joomla 5 DI Container for Load User by username": {
 		"prefix": "sp-load-user-by-username",
 		"body": [
 			"${1:\\$loadUserById} = Factory::getContainer()->get(UserFactoryInterface::class)->loadUserByUsername(${1});"
 		],
-		"description": "Joomla 4 DI Container for load User by username"
+		"description": "Joomla 4 and Joomla 5 DI Container for load User by username"
+	},
+	"Joomla 5 DI Container for Mailer": {
+		"prefix": "sp-mailer",
+		"body": [
+			"${1:\\$mailer} = Factory::getContainer()->get(MailerFactoryInterface::class)->createMailer();"
+		],
+		"description": "Joomla 5 DI Container for load User by username"
 	}
 }

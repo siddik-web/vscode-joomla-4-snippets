@@ -1,6 +1,6 @@
 # vscode-joomla-4-snippets
 
-🚀 Supercharge your Joomla 4 development with "VSCode Joomla 4 Snippets"! Elevate your coding efficiency and unleash your creativity. Get ready to write Joomla code like a pro! 💡💻
+🚀 Supercharge your Joomla 4 and Joomla 5 development with "VSCode Joomla 4 and 5 Snippets"! Elevate your coding efficiency and unleash your creativity. Get ready to write Joomla code like a pro! 💡💻
 
 ## Features
 
@@ -14,15 +14,19 @@
 1. Enter the following command and press enter: 'ext install vscode-joomla-4-snippets'
 1. Choose extension (Author: Md Siddiqur Rahman)
 1. Reload VS Code
+
 ## Release Notes
 
-New Joomla 4 Form Code Snippets.
+New Joomla 4 and Joomla 5 Form Code Snippets.
 
-### 1.0.0
+### 0.0.6
 
-Initial release of Joomla 4 Code Snippets.
+- Joomla 4 and Joomla 5 User Code Snippets.
 
------------------------------------------------------------------------------------------------------------
+### 0.0.1
+
+- Initial release of Joomla 4 Code Snippets.
+
 ## Feedback
 
 Please send any feedback or suggestions to [@imsiddiqur](https://twitter.com/imsiddiqur) (Twitter) or [create an issue](https://github.com/siddik-web/vscode-joomla-4-snippets) on GitHub.
