@@ -19,5 +19,19 @@
 			"${1:\\$object} = Factory::getContainer()->get(${1:FactoryInterface::class});"
 		],
 		"description": "Joomla 4 DI Container for given Object"
+	},
+	"Joomla 4 DI Container for Load User by Id": {
+		"prefix": "sp-load-user-by-id",
+		"body": [
+			"${1:\\$loadUserById} = Factory::getContainer()->get(UserFactoryInterface::class)->loadUserById(${1});"
+		],
+		"description": "Joomla 4 DI Container for load User by Id"
+	},
+	"Joomla 4 DI Container for Load User by username": {
+		"prefix": "sp-load-user-by-username",
+		"body": [
+			"${1:\\$loadUserById} = Factory::getContainer()->get(UserFactoryInterface::class)->loadUserByUsername(${1});"
+		],
+		"description": "Joomla 4 DI Container for load User by username"
 	}
 }
