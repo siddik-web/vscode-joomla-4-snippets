@@ -32,6 +32,7 @@
         ]
     },
     "scripts": {
-        "install": "vsce package; code --install-extension *.vsix"
+        "install": "vsce package; code --install-extension *.vsix",
+        "publish": "vsce publish"
     }
 }
