@@ -15,6 +15,15 @@
 1. Choose extension (Author: Md Siddiqur Rahman)
 1. Reload VS Code
 
+# Snippets List:
+- ``sp-toolbar`` - Create Toolbar Object.
+- ``sp-db`` - Create Database Object.
+- ``sp-object`` - Create Any DI Container Object.
+- ``sp-user-id`` - Load User by Id Object.
+- ``sp-user-username`` - Load User by username Object.
+- ``sp-mailer`` - Create Mailer Object.
+
+
 ## Release Notes
 
 New Joomla 4 and Joomla 5 Form Code Snippets.

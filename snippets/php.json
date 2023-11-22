@@ -21,14 +21,14 @@
 		"description": "Joomla 4 and Joomla 5 DI Container for given Object"
 	},
 	"Joomla 4 and Joomla 5 DI Container for Load User by Id": {
-		"prefix": "sp-load-user-by-id",
+		"prefix": "sp-user-id",
 		"body": [
 			"${1:\\$loadUserById} = Factory::getContainer()->get(UserFactoryInterface::class)->loadUserById(${1});"
 		],
 		"description": "Joomla 4 and Joomla 5 DI Container for load User by Id"
 	},
 	"Joomla 4 and Joomla 5 DI Container for Load User by username": {
-		"prefix": "sp-load-user-by-username",
+		"prefix": "sp-user-username",
 		"body": [
 			"${1:\\$loadUserById} = Factory::getContainer()->get(UserFactoryInterface::class)->loadUserByUsername(${1});"
 		],
@@ -39,6 +39,13 @@
 		"body": [
 			"${1:\\$mailer} = Factory::getContainer()->get(MailerFactoryInterface::class)->createMailer();"
 		],
-		"description": "Joomla 5 DI Container for load User by username"
+		"description": "Joomla 5 DI Container for mailer object"
+	},
+	"Joomla 4 and 5 Get User Object": {
+		"prefix": "sp-user",
+		"body": [
+			"${1:\\$user} = Factory::getApplication()->getIdentity();"
+		],
+		"description": "Joomla 4 and 5 user object"
 	}
 }
