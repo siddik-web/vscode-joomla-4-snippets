@@ -15,14 +15,54 @@
 1. Choose extension (Author: Md Siddiqur Rahman)
 1. Reload VS Code
 
-# Snippets List:
-- ``sp-toolbar`` - Create Toolbar Object.
-- ``sp-db`` - Create Database Object.
-- ``sp-object`` - Create Any DI Container Object.
-- ``sp-user-id`` - Load User by Id Object.
-- ``sp-user-username`` - Load User by username Object.
-- ``sp-mailer`` - Create Mailer Object.
+# Snippets List
 
+## Dependency Injection Container
+- `sp-toolbar` - Create Toolbar Object
+- `sp-db` - Create Database Object
+- `sp-object` - Create Any DI Container Object
+- `sp-user-id` - Load User by Id Object
+- `sp-user-username` - Load User by Username Object
+- `sp-mailer` - Create Mailer Object
+- `sp-user` - Get Current User Object
+
+## Database Operations
+- `sp-db-query` - Create Database Query with Fluent Interface
+
+## Form Handling
+- `sp-form` - Create Blank Form XML
+- `sp-listfield` - Create List Form Field
+- `sp-textareafield` - Create Textarea Form Field
+- `sp-sqlfield` - Create SQL Form Field
+- `sp-calendarfield` - Create Calendar Form Field
+- `sp-hiddenfield` - Create Hidden Form Field
+- `sp-spacerfield` - Create Spacer Form Field
+- `sp-repeatablefield` - Create Repeatable Form Field
+- `sp-form-validate` - Form Validation Code
+
+## Plugin Development
+- `sp-plugin-base` - Create Basic Plugin Class
+- `sp-plugin-events` - Plugin Event Registration
+- `sp-plugin-xml` - Plugin Configuration XML
+- `sp-plugin-di-provider` - Plugin Dependency Injection Provider
+- `sp-plugin-event` - Plugin Event Trigger Code
+
+## Component Development
+- `sp-component-controller` - Component Base Controller
+- `sp-component-model` - Component Base Model with CRUD
+- `sp-component-helper` - Component Parameters Helper
+
+## Template Development
+- `sp-template-index` - Template Index File
+- `sp-template-chrome` - Template Module Chrome
+- `sp-template-override` - Template Override Base
+- `sp-template-error` - Template Error Page
+
+## Utility Functions
+- `sp-input` - Input Handling with Type Filtering
+- `sp-language` - Language File Loading
+- `sp-error` - Error Handling and Logging
+- `sp-session` - Session Handling
 
 ## Release Notes
 
