@@ -28,6 +28,14 @@
 
 New Joomla 4 and Joomla 5 Form Code Snippets.
 
+### 0.0.8
+
+- Joomla 4 and Joomla 5 Form Code, Template Snippets.
+
+### 0.0.7
+
+- Joomla 4 and Joomla 5 Form Code, Repository Snippets.
+
 ### 0.0.6
 
 - Joomla 4 and Joomla 5 User Code Snippets.
