@@ -1,7 +1,6 @@
 {
 	"Joomla Blank Form Field": {
 		"prefix": "sp-form",
-		
 		"body": [
 			"<?xml version=\"1.0\" encoding=\"utf-8\"?>",
 			"<form>",
@@ -220,5 +219,105 @@
 			"</metadata>"
 		],
 		"description": "Joomla Blank Menu Item"
+	},
+	"Joomla Blank Form List Field": {
+		"prefix": "sp-listfield",
+		"body": [
+			"<field",
+			"\ttype=\"list\"",
+			"\tname=\"${1:example}\"",
+			"\tlabel=\"${2:example}\"",
+			">",
+			"\t<option value=\"option1\">Option 1</option>",
+			"\t<option value=\"option2\">Option 2</option>",
+			"\t<option value=\"option3\">Option 3</option>",
+			"</field>"
+		],
+		"description": "Joomla Blank Form List Field"
+	},
+	"Joomla Blank Form Textarea Field": {
+		"prefix": "sp-textareafield",
+		"body": [
+			"<field",
+			"\ttype=\"textarea\"",
+			"\tname=\"${1:example}\"",
+			"\tlabel=\"${2:example}\"",
+			"\trows=\"5\"",
+			"\tcols=\"30\"",
+			"\tfilter=\"raw\"",
+			"/>"
+		],
+		"description": "Joomla Blank Form Textarea Field"
+	},
+	"Joomla Blank Form SQL Field": {
+		"prefix": "sp-sqlfield",
+		"body": [
+			"<field",
+			"\ttype=\"sql\"",
+			"\tname=\"${1:example}\"",
+			"\tlabel=\"${2:example}\"",
+			"\tquery=\"SELECT id, title FROM #__table\"",
+			"\tkey_field=\"id\"",
+			"\tvalue_field=\"title\"",
+			"/>"
+		],
+		"description": "Joomla Blank Form SQL Field"
+	},
+	"Joomla Blank Form Calendar Field": {
+		"prefix": "sp-calendarfield",
+		"body": [
+			"<field",
+			"\ttype=\"calendar\"",
+			"\tname=\"${1:example}\"",
+			"\tlabel=\"${2:example}\"",
+			"\tformat=\"%Y-%m-%d\"",
+			"\tsize=\"10\"",
+			"\tmaxlength=\"10\"",
+			"/>"
+		],
+		"description": "Joomla Blank Form Calendar Field"
+	},
+	"Joomla Blank Form Hidden Field": {
+		"prefix": "sp-hiddenfield",
+		"body": [
+			"<field",
+			"\ttype=\"hidden\"",
+			"\tname=\"${1:example}\"",
+			"\tdefault=\"${2:defaultValue}\"",
+			"/>"
+		],
+		"description": "Joomla Blank Form Hidden Field"
+	},
+	"Joomla Blank Form Spacer Field": {
+		"prefix": "sp-spacerfield",
+		"body": [
+			"<field",
+			"\ttype=\"spacer\"",
+			"\tname=\"${1:example}\"",
+			"\thr=\"true\"",
+			"\tlabel=\"${2:example}\"",
+			"/>"
+		],
+		"description": "Joomla Blank Form Spacer Field"
+	},
+	"Joomla Blank Form Repeatable Field": {
+		"prefix": "sp-repeatablefield",
+		"body": [
+			"<field",
+			"\ttype=\"repeatable\"",
+			"\tname=\"${1:example}\"",
+			"\tlabel=\"${2:example}\"",
+			"\tmax=\"10\"",
+			">",
+			"\t<form>",
+			"\t\t<field",
+			"\t\t\ttype=\"text\"",
+			"\t\t\tname=\"item\"",
+			"\t\t\tlabel=\"Item\"",
+			"\t\t/>",
+			"\t</form>",
+			"</field>"
+		],
+		"description": "Joomla Blank Form Repeatable Field"
 	}
 }

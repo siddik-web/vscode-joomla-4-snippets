@@ -1,51 +1,395 @@
 {
-	"Joomla 4 and Joomla 5 DI Container for Toolbar": {
+	"Joomla 5 DI Container for Toolbar": {
 		"prefix": "sp-toolbar",
 		"body": [
+			"use Joomla\\CMS\\Factory;\n",
+			"use Joomla\\CMS\\Toolbar\\ToolbarFactoryInterface;\n\n",
 			"${1:\\$toolbar} = Factory::getContainer()->get(ToolbarFactoryInterface::class)->createToolbar('toolbar');"
 		],
-		"description": "Joomla 4 and Joomla 5 DI Container for Toolbar Object"
+		"description": "Joomla 5 DI Container for Toolbar Object"
 	},
-	"Joomla 4 and Joomla 5 DI Container for Database Object": {
+	"Joomla 5 DI Container for Database Object": {
 		"prefix": "sp-db",
 		"body": [
+			"use Joomla\\CMS\\Factory;\n",
+			"use Joomla\\Database\\DatabaseInterface;\n\n",
 			"${1:\\$db} = Factory::getContainer()->get(DatabaseInterface::class);"
 		],
-		"description": "Joomla 4 and Joomla 5 DI Container for DatabaseDriver Object"
+		"description": "Joomla 5 DI Container for DatabaseDriver Object"
 	},
-	"Joomla 4 and Joomla 5 DI Container for Object": {
+	"Joomla 5 DI Container for Generic Object": {
 		"prefix": "sp-object",
 		"body": [
-			"${1:\\$object} = Factory::getContainer()->get(${1:FactoryInterface::class});"
+			"use Joomla\\CMS\\Factory;\n\n",
+			"${1:\\$object} = Factory::getContainer()->get(${2:FactoryInterface::class});"
 		],
-		"description": "Joomla 4 and Joomla 5 DI Container for given Object"
+		"description": "Joomla 5 DI Container for given Object"
 	},
-	"Joomla 4 and Joomla 5 DI Container for Load User by Id": {
+	"Joomla 5 DI Container for Load User by Id": {
 		"prefix": "sp-user-id",
 		"body": [
-			"${1:\\$loadUserById} = Factory::getContainer()->get(UserFactoryInterface::class)->loadUserById(${1});"
+			"use Joomla\\CMS\\Factory;\n",
+			"use Joomla\\CMS\\User\\UserFactoryInterface;\n\n",
+			"${1:\\$user} = Factory::getContainer()->get(UserFactoryInterface::class)->loadUserById(${2:$userId});"
 		],
-		"description": "Joomla 4 and Joomla 5 DI Container for load User by Id"
+		"description": "Joomla 5 DI Container for load User by Id"
 	},
-	"Joomla 4 and Joomla 5 DI Container for Load User by username": {
+	"Joomla 5 DI Container for Load User by Username": {
 		"prefix": "sp-user-username",
 		"body": [
-			"${1:\\$loadUserById} = Factory::getContainer()->get(UserFactoryInterface::class)->loadUserByUsername(${1});"
+			"use Joomla\\CMS\\Factory;\n",
+			"use Joomla\\CMS\\User\\UserFactoryInterface;\n\n",
+			"${1:\\$user} = Factory::getContainer()->get(UserFactoryInterface::class)->loadUserByUsername(${2:$username});"
 		],
-		"description": "Joomla 4 and Joomla 5 DI Container for load User by username"
+		"description": "Joomla 5 DI Container for load User by Username"
 	},
 	"Joomla 5 DI Container for Mailer": {
 		"prefix": "sp-mailer",
 		"body": [
+			"use Joomla\\CMS\\Factory;\n",
+			"use Joomla\\CMS\\Mail\\MailerFactoryInterface;\n\n",
 			"${1:\\$mailer} = Factory::getContainer()->get(MailerFactoryInterface::class)->createMailer();"
 		],
-		"description": "Joomla 5 DI Container for mailer object"
+		"description": "Joomla 5 DI Container for Mailer Object"
 	},
-	"Joomla 4 and 5 Get User Object": {
+	"Joomla 5 Get User Object": {
 		"prefix": "sp-user",
 		"body": [
+			"use Joomla\\CMS\\Factory;\n\n",
 			"${1:\\$user} = Factory::getApplication()->getIdentity();"
 		],
-		"description": "Joomla 4 and 5 user object"
+		"description": "Joomla 5 Current User Object"
+	},
+	"Joomla 5 Database Query Builder": {
+		"prefix": "sp-db-query",
+		"body": [
+			"use Joomla\\CMS\\Factory;\n",
+			"use Joomla\\Database\\DatabaseInterface;\n\n",
+			"${1:\\$db} = Factory::getContainer()->get(DatabaseInterface::class);\n",
+			"${2:\\$query} = ${1:\\$db}->getQuery(true);\n\n",
+			"${2:\\$query}\n\t->select(${1:\\$db}->quoteName('${3:column_name}'))\n\t->from(${1:\\$db}->quoteName('${4:table_name}'))\n\t->where(${1:\\$db}->quoteName('${5:condition_column}') . ' = ' . ${1:\\$db}->quote(${6:$value}));\n\n",
+			"${1:\\$db}->setQuery(${2:\\$query});\n",
+			"${7:\\$result} = ${1:\\$db}->loadObjectList();"
+		],
+		"description": "Joomla 5 Database Query Builder with Fluent Interface"
+	},
+	"Joomla 5 Input Handling": {
+		"prefix": "sp-input",
+		"body": [
+			"use Joomla\\CMS\\Factory;\n\n",
+			"${1:\\$input} = Factory::getApplication()->getInput();\n\n",
+			"${2:\\$value} = ${1:\\$input}->get('${3:parameter_name}', ${4:null}, '${5:string}');"
+		],
+		"description": "Joomla 5 Input Handling with Type Filtering"
+	},
+	"Joomla 5 Language Loading": {
+		"prefix": "sp-language",
+		"body": [
+			"use Joomla\\CMS\\Factory;\n\n",
+			"Factory::getLanguage()->load('${1:com_extension}', ${2:JPATH_ADMINISTRATOR});"
+		],
+		"description": "Joomla 5 Language File Loading"
+	},
+	"Joomla 5 Error Handling": {
+		"prefix": "sp-error",
+		"body": [
+			"use Joomla\\CMS\\Factory;\n",
+			"use Joomla\\CMS\\Log\\Log;\n\n",
+			"try {\n\t${1:// Your code here}\n} catch (\\Exception ${2:\\$e}) {\n\t// Log the error\n\tLog::add(\n\t\t${2:\\$e}->getMessage(),\n\t\tLog::ERROR,\n\t\t'${3:error_category}'\n\t);\n\n\t// Optional: Throw the exception again or handle it\n\tthrow ${2:\\$e};\n}"
+		],
+		"description": "Joomla 5 Error Handling and Logging"
+	},
+	"Joomla 5 Form Validation": {
+		"prefix": "sp-form-validate",
+		"body": [
+			"use Joomla\\CMS\\Factory;\n",
+			"use Joomla\\CMS\\Form\\Form;\n\n",
+			"${1:\\$form} = Form::getInstance('${2:form_name}', '${3:form_xml_path}');\n\n",
+			"${4:\\$data} = ${5:\\$input}->post->getArray();\n",
+			"if (!${1:\\$form}->validate(${4:\\$data})) {\n\t// Handle validation errors\n\t${6:\\$errors} = ${1:\\$form}->getErrors();\n\t// Process or display errors\n}"
+		],
+		"description": "Joomla 5 Form Validation with XML Form"
+	},
+	"Joomla 5 Plugin Event Trigger": {
+		"prefix": "sp-plugin-event",
+		"body": [
+			"use Joomla\\CMS\\Plugin\\PluginHelper;\n",
+			"use Joomla\\Event\\Event;\n\n",
+			"${1:\\$dispatcher} = Factory::getContainer()->get('event.dispatcher');\n\n",
+			"${2:\\$event} = new Event('${3:onEventName}', [\n\t${4:'context' => '${5:com_extension}'},\n\t${6:'subject' => &$data}\n]);\n\n",
+			"${1:\\$dispatcher}->dispatch(${2:\\$event});"
+		],
+		"description": "Joomla 5 Plugin Event Trigger with Dispatcher"
+	},
+	"Joomla 5 Session Handling": {
+		"prefix": "sp-session",
+		"body": [
+			"use Joomla\\CMS\\Factory;\n",
+			"use Joomla\\Session\\SessionInterface;\n\n",
+			"${1:\\$session} = Factory::getContainer()->get(SessionInterface::class);\n\n",
+			"// Set session data\n${1:\\$session}->set('${2:key}', ${3:$value});\n\n",
+			"// Get session data\n${4:\\$data} = ${1:\\$session}->get('${2:key}', ${5:null});"
+		],
+		"description": "Joomla 5 Session Handling"
+	},
+	"Joomla 5 Component Helper": {
+		"prefix": "sp-component-helper",
+		"body": [
+			"use Joomla\\CMS\\Component\\ComponentHelper;\n\n",
+			"${1:\\$params} = ComponentHelper::getParams('${2:com_extension}');\n\n",
+			"${3:\\$setting} = ${1:\\$params}->get('${4:parameter_name}', ${5:default_value});"
+		],
+		"description": "Joomla 5 Component Parameters Helper"
+	},
+	"Joomla 5 Plugin Configuration XML": {
+		"prefix": "sp-plugin-xml",
+		"body": [
+			"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n",
+			"<extension version=\"5.0\" type=\"plugin\" group=\"${1:group}\" method=\"upgrade\">\n",
+			"\t<name>${2:Plugin Name}</name>\n",
+			"\t<author>${3:Your Name}</author>\n",
+			"\t<creationDate>${4:CURRENT_DATE}</creationDate>\n",
+			"\t<copyright>(C) ${5:YEAR} ${3:Your Name}</copyright>\n",
+			"\t<license>GNU General Public License version 2 or later; see LICENSE.txt</license>\n",
+			"\t<authorEmail>${6:your.email@example.com}</authorEmail>\n",
+			"\t<authorUrl>${7:www.example.com}</authorUrl>\n",
+			"\t<version>1.0.0</version>\n",
+			"\t<description>${8:PLUGIN_DESCRIPTION}</description>\n\n",
+			"\t<files>\n",
+			"\t\t<filename plugin=\"${9:plugin_name}\">${9:plugin_name}.php</filename>\n",
+			"\t\t<filename>services/provider.php</filename>\n",
+			"\t</files>\n\n",
+			"\t<config>\n",
+			"\t\t<fields name=\"params\">\n",
+			"\t\t\t<fieldset name=\"basic\">\n",
+			"\t\t\t\t<field\n",
+			"\t\t\t\t\tname=\"${10:param_name}\"\n",
+			"\t\t\t\t\ttype=\"text\"\n",
+			"\t\t\t\t\tlabel=\"${11:PARAM_LABEL}\"\n",
+			"\t\t\t\t\tdescription=\"${12:PARAM_DESCRIPTION}\"\n",
+			"\t\t\t\t/>\n",
+			"\t\t\t</fieldset>\n",
+			"\t\t</fields>\n",
+			"\t</config>\n",
+			"</extension>"
+		],
+		"description": "Joomla 5 Plugin Configuration XML File"
+	},
+	"Joomla 5 Plugin Dependency Injection Provider": {
+		"prefix": "sp-plugin-di-provider",
+		"body": [
+			"<?php\n",
+			"use Joomla\\DI\\Container;\n",
+			"use Joomla\\DI\\ServiceProviderInterface;\n",
+			"use Joomla\\CMS\\Extension\\ComponentInterface;\n\n",
+			"return new class implements ServiceProviderInterface\n",
+			"{\n",
+			"\t/**\n",
+			"\t * Registers the service provider with a DI container.\n",
+			"\t *\n",
+			"\t * @param   Container  \\$container  The DI container.\n",
+			"\t *\n",
+			"\t * @return  void\n",
+			"\t */\n",
+			"\tpublic function register(Container \\$container)\n",
+			"\t{\n",
+			"\t\t\\$container->set(\n",
+			"\t\t\t'${1:service_name}',\n",
+			"\t\t\tfunction (Container \\$container) {\n",
+			"\t\t\t\treturn new ${2:ServiceClass}(\n",
+			"\t\t\t\t\t\\$container->get('${3:dependency1}'),\n",
+			"\t\t\t\t\t\\$container->get('${4:dependency2}')\n",
+			"\t\t\t\t);\n",
+			"\t\t\t}\n",
+			"\t\t);\n",
+			"\t}\n",
+			"};"
+		],
+		"description": "Joomla 5 Plugin Dependency Injection Service Provider"
+	},
+	"Joomla 5 Basic Plugin Class": {
+		"prefix": "sp-plugin-base",
+		"body": [
+			"<?php\n",
+			"use Joomla\\CMS\\Plugin\\CMSPlugin;\n",
+			"use Joomla\\Event\\SubscriberInterface;\n",
+			"use Joomla\\Event\\DispatcherInterface;\n\n",
+			"class PlaceHolder${1:PluginName}Plugin extends CMSPlugin implements SubscriberInterface\n",
+			"{\n",
+			"\t/**\n",
+			"\t * Returns an array of events this subscriber will listen to.\n",
+			"\t *\n",
+			"\t * @return array\n",
+			"\t */\n",
+			"\tpublic static function getSubscribedEvents(): array\n",
+			"\t{\n",
+			"\t\treturn [\n",
+			"\t\t\t'${2:onEventName}' => 'on${3:EventMethod}',\n",
+			"\t\t];\n",
+			"\t}\n\n",
+			"\t/**\n",
+			"\t * Event handler method\n",
+			"\t *\n",
+			"\t * @param   Event  ${4:$event}\n",
+			"\t * @return  void\n",
+			"\t */\n",
+			"\tpublic function on${3:EventMethod}(${4:$event})\n",
+			"\t{\n",
+			"\t\t// Your event handling logic here\n",
+			"\t\t${5:// Example: $event->getArgument('context');}\n",
+			"\t}\n",
+			"}"
+		],
+		"description": "Joomla 5 Basic Plugin Class with Event Subscriber"
+	},
+	"Joomla 5 Plugin Event Registration": {
+		"prefix": "sp-plugin-events",
+		"body": [
+			"/**\n",
+			" * List of events this plugin will subscribe to\n",
+			" *\n",
+			" * @return array\n",
+			" */\n",
+			"public static function getSubscribedEvents(): array\n",
+			"{\n",
+			"\treturn [\n",
+			"\t\t'onContentPrepare' => 'onContentPrepareHandler',\n",
+			"\t\t'onUserAfterLogin' => 'onUserAfterLoginHandler',\n",
+			"\t\t'onExtensionAfterSave' => 'onExtensionAfterSaveHandler',\n",
+			"\t\t'onAjax${1:PluginName}' => 'onAjaxHandler',\n",
+			"\t];\n",
+			"}"
+		],
+		"description": "Joomla 5 Plugin Event Registration Template"
+	},
+	"Joomla 5 Component Controller": {
+		"prefix": "sp-component-controller",
+		"body": [
+			"<?php\n",
+			"use Joomla\\CMS\\MVC\\Controller\\BaseController;\n",
+			"use Joomla\\CMS\\Factory;\n\n",
+			"class ${1:Component}Controller extends BaseController\n",
+			"{\n",
+			"\t/**\n",
+			"\t * The default view for the component\n",
+			"\t *\n",
+			"\t * @var    string\n",
+			"\t */\n",
+			"\tprotected \\$default_view = '${2:defaultview}';\n\n",
+			"\t/**\n",
+			"\t * Method to display a view.\n",
+			"\t *\n",
+			"\t * @param   boolean  ${3:\\$cachable}   If true, the view output will be cached\n",
+			"\t * @param   array    ${4:\\$urlparams}  An array of safe URL parameters\n",
+			"\t *\n",
+			"\t * @return  BaseController  A BaseController object to support chaining\n",
+			"\t */\n",
+			"\tpublic function display(${3:\\$cachable} = false, ${4:\\$urlparams} = [])\n",
+			"\t{\n",
+			"\t\t// Set the default view if not set\n",
+			"\t\t${5:\\$view} = Factory::getApplication()->getInput()->get('view', \\$this->default_view);\n",
+			"\t\tFactory::getApplication()->getInput()->set('view', ${5:\\$view});\n\n",
+			"\t\t// Call parent display method\n",
+			"\t\treturn parent::display(${3:\\$cachable}, ${4:\\$urlparams});\n",
+			"\t}\n\n",
+			"\t/**\n",
+			"\t * Custom method example\n",
+			"\t */\n",
+			"\tpublic function ${6:customMethod}()\n",
+			"\t{\n",
+			"\t\t// Custom logic here\n",
+			"\t\t${7:// Example: $event->getArgument('context');}\n",
+			"\t\t\\$this->setRedirect('index.php?option=${8:com_component}');\n",
+			"\t}\n",
+			"}"
+		],
+		"description": "Joomla 5 Component Base Controller"
+	},
+	"Joomla 5 Component Model": {
+		"prefix": "sp-component-model",
+		"body": [
+			"<?php\n",
+			"use Joomla\\CMS\\MVC\\Model\\BaseDatabaseModel;\n",
+			"use Joomla\\CMS\\Factory;\n",
+			"use Joomla\\Database\\DatabaseInterface;\n\n",
+			"class ${1:Component}Model${2:ModelName} extends BaseDatabaseModel\n",
+			"{\n",
+			"\t/**\n",
+			"\t * Database object\n",
+			"\t *\n",
+			"\t * @var    DatabaseInterface\n",
+			"\t */\n",
+			"\tprotected \\$db;\n\n",
+			"\t/**\n",
+			"\t * Constructor\n",
+			"\t *\n",
+			"\t * @param   array                \\$config   An array of configuration options\n",
+			"\t * @param   DatabaseInterface    \\$db       The database interface\n",
+			"\t */\n",
+			"\tpublic function __construct(array \\$config = [], DatabaseInterface \\$db = null)\n",
+			"\t{\n",
+			"\t\tparent::__construct(\\$config);\n",
+			"\t\t\\$this->db = \\$db ?? Factory::getContainer()->get(DatabaseInterface::class);\n",
+			"\t}\n\n",
+			"\t/**\n",
+			"\t * Method to get data\n",
+			"\t *\n",
+			"\t * @return  array\n",
+			"\t */\n",
+			"\tpublic function getData()\n",
+			"\t{\n",
+			"\t\t\\$query = \\$this->db->getQuery(true);\n",
+			"\t\t\\$query->select('*')\n",
+			"\t\t\t->from(\\$this->db->quoteName('${3:table_name}'));\n\n",
+			"\t\t\\$this->db->setQuery(\\$query);\n",
+			"\t\treturn \\$this->db->loadObjectList();\n",
+			"\t}\n\n",
+			"\t/**\n",
+			"\t * Method to save data\n",
+			"\t *\n",
+			"\t * @param   array  \\$data  The data to save\n",
+			"\t *\n",
+			"\t * @return  bool\n",
+			"\t */\n",
+			"\tpublic function save(array \\$data)\n",
+			"\t{\n",
+			"\t\ttry {\n",
+			"\t\t\t// Perform validation\n",
+			"\t\t\t\\$this->validate(\\$data);\n\n",
+			"\t\t\t// Insert or update logic\n",
+			"\t\t\t\\$query = \\$this->db->getQuery(true);\n",
+			"\t\t\t\\$columns = ['${4:column1}', '${5:column2}'];\n",
+			"\t\t\t\\$values = [\n",
+			"\t\t\t\t\\$this->db->quote(\\$data['${4:column1}']),\n",
+			"\t\t\t\t\\$this->db->quote(\\$data['${5:column2}'])\n",
+			"\t\t\t];\n\n",
+			"\t\t\t\\$query->insert(\\$this->db->quoteName('${3:table_name}'))\n",
+			"\t\t\t\t->columns(\\$this->db->quoteName(\\$columns))\n",
+			"\t\t\t\t->values(implode(',', \\$values));\n\n",
+			"\t\t\t\\$this->db->setQuery(\\$query);\n",
+			"\t\t\t\\$this->db->execute();\n\n",
+			"\t\t\treturn true;\n",
+			"\t\t} catch (\\Exception \\$e) {\n",
+			"\t\t\t\\$this->setError(\\$e->getMessage());\n",
+			"\t\t\treturn false;\n",
+			"\t\t}\n",
+			"\t}\n\n",
+			"\t/**\n",
+			"\t * Validate input data\n",
+			"\t *\n",
+			"\t * @param   array  \\$data  The data to validate\n",
+			"\t *\n",
+			"\t * @throws  \\InvalidArgumentException\n",
+			"\t */\n",
+			"\tprotected function validate(array \\$data)\n",
+			"\t{\n",
+			"\t\t// Add your validation logic\n",
+			"\t\tif (empty(\\$data['${4:column1}'])) {\n",
+			"\t\t\tthrow new \\InvalidArgumentException('${6:Validation error message}');\n",
+			"\t\t}\n",
+			"\t}\n",
+			"}"
+		],
+		"description": "Joomla 5 Component Base Model with CRUD Operations"
 	}
 }
