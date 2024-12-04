@@ -5,7 +5,7 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/siddik-web/vscode-joomla-4-snippets.git"
+        "url": "git+https://github.com/siddik-web/vscode-joomla-4-snippets.git"
     },
     "bugs": {
         "url": "https://github.com/siddik-web/vscode-joomla-4-snippets/issues"
