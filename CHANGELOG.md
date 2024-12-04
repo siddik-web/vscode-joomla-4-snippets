@@ -8,6 +8,14 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - Initial release
 
+## [v1.0.8]
+
+- Add new snippets for Joomla 4 and Joomla 5 : Form, Template
+
+## [v1.0.7]
+
+- Add new snippets for Joomla 4 and Joomla 5
+
 ## [v1.0.6]
 
 - Support Joomla 4 and Joomla 5
