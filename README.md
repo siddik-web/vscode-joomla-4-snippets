@@ -1,4 +1,4 @@
-# vscode-joomla-4-snippets
+# Joomla Snippets for Visual Studio Code
 
 🚀 Supercharge your Joomla 4 and Joomla 5 development with "VSCode Joomla 4 and 5 Snippets"! Elevate your coding efficiency and unleash your creativity. Get ready to write Joomla code like a pro! 💡💻
 
