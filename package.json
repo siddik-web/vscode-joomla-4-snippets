@@ -1,6 +1,6 @@
 {
     "name": "vscode-joomla-4-snippets",
-    "displayName": "Joomla Snippets for Visual Studio Code",
+    "displayName": "Joomla 5 Snippets for Visual Studio Code",
     "description": "Snippets for Joomla 4 and Joomla 5.",
     "license": "MIT",
     "repository": {
