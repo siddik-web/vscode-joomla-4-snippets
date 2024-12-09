@@ -19,6 +19,10 @@
 
 ## Dependency Injection Container
 - `sp-toolbar` - Create Toolbar Object
+- `sp-config` - Create Config Object
+- `sp-language` - Create Language Object
+- `sp-app` - Create Application Object
+- `sp-input` - Create Input Object
 - `sp-db` - Create Database Object
 - `sp-object` - Create Any DI Container Object
 - `sp-user-id` - Load User by Id Object
@@ -46,6 +50,7 @@
 - `sp-plugin-xml` - Plugin Configuration XML
 - `sp-plugin-di-provider` - Plugin Dependency Injection Provider
 - `sp-plugin-event` - Plugin Event Trigger Code
+- `sp-plugin-di-service` - Plugin Dependency Injection Service
 
 ## Component Development
 - `sp-component-controller` - Component Base Controller
@@ -57,6 +62,11 @@
 - `sp-template-chrome` - Template Module Chrome
 - `sp-template-override` - Template Override Base
 - `sp-template-error` - Template Error Page
+- `sp-template-header` - Template Header
+- `sp-template-menu` - Template Menu
+- `sp-template-single` - Template Single
+- `sp-template-single-layout-section` - Template Single Layout Section
+- `sp-template-single-template` - Template Single Template
 
 ## Utility Functions
 - `sp-input` - Input Handling with Type Filtering
@@ -68,17 +78,21 @@
 
 New Joomla 4 and Joomla 5 Form Code Snippets.
 
+### 0.0.9
+
+- Add new snippets for Joomla 4 and Joomla 5
+
 ### 0.0.8
 
-- Joomla 4 and Joomla 5 Form Code, Template Snippets.
+- Add new snippets for Joomla 4 and Joomla 5
 
 ### 0.0.7
 
-- Joomla 4 and Joomla 5 Form Code, Repository Snippets.
+- Add new snippets for Joomla 4 and Joomla 5
 
 ### 0.0.6
 
-- Joomla 4 and Joomla 5 User Code Snippets.
+- Add new snippets for Joomla 4 and Joomla 5
 
 ### 0.0.1
 
